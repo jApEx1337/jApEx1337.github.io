@@ -38,19 +38,14 @@ h1,a{
 }
   </style>
 <script>
-	window.addEventListener("load", function() {
-		var opacity = 0.0;
-		
-		window.main.style.display = "block";
-		window.main.style.visibility = "visible";
-		
-		var interval = setInterval(function() {
-			if (opacity >= 1.0) 
-				clearInterval(interval);
-			window.main.style.opacity = opacity;
-			opacity += 0.1;
-		}, 10);
-	});
+function myFunction() {
+    var vid = document.getElementById("trap");
+    vid.volume = 0.5;
+    $("video").prop('muted', false); //unmute
+    document.getElementById("plbtn").style.display = "none";
+    document.getElementById("newinfo").style.display = "block";
+    document.getElementById("newinfoq").style.display = "block";
+}
   </script>
 </head>
 <body>
